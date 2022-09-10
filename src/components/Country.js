@@ -41,8 +41,8 @@ const Country = () => {
                 </Link>
                 {country.map((x) => {
                     return (
-                        <div className="md:flex space-y-8 md:space-y-0 gap-8 dark:text-white">
-                            <img className="mx-10 w-[550px] md:w-[500px] shadow-md" alt="flag" src={x.flags.svg}/>
+                        <div className="dark:bg-darkVDarkBlue md:flex space-y-8 md:space-y-0 gap-8 dark:text-white">
+                            <img className="mx-10 md:w-[500px] shadow-md" alt="flag" src={x.flags.svg}/>
                             <div className="flex flex-col justify-center mx-10 md:mx-0">
                                 <p className="font-bold text-2xl">{x.name.official}</p>
                                 <div className="md:flex gap-12 space-y-4 md:space-y-0 leading-loose mt-4 text-lightDarkGray dark:text-white text-sm">
@@ -59,7 +59,7 @@ const Country = () => {
                                     </div>
                                 </div>
                                 {x.borders && (
-                                    <div className="flex flex-wrap mt-10 gap-2 font-bold text-sm text-lightDarkGray">
+                                    <div className="flex flex-wrap my-10 gap-2 font-bold text-sm text-lightDarkGray">
                                         <p>Border countries:</p>
                                         <div className="font-light flex flex-wrap gap-4">
                                             {x.borders.map((y) => {

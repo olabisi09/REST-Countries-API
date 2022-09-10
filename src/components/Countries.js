@@ -56,7 +56,7 @@ const Countries = () => {
                     </div>
                 ) :
                 (
-                    <div className="md:grid md:grid-cols-2 lg:grid-cols-4 space-y-8 md:space-y-0 gap-8 mx-32 md:mx-16 mt-8">
+                    <div className="md:grid md:grid-cols-2 lg:grid-cols-4 space-y-8 md:space-y-0 gap-8 mx-16 md:mx-16 mt-8">
                         {country.map((x) => {
                             return <Link to={`/${x.name.common}`} key={x.cca3}>
                                 <div className="rounded dark:bg-darkBlue overflow-hidden shadow-lg dark:text-white mb-12 md:mb-0">
